@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nl.ictu.isd.art.meta.TestScriptFactory;
+import nl.ictu.isd.art.services.excel2test.model.TestScriptFactory;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;
@@ -49,6 +49,7 @@ public class Service {
                 return TEST_SCRIPT_FACTORY.createFromExcelSheet(content, request.params(":sheet")).toString();
             } catch (IOException | InvalidFormatException | FileUploadException ex) {
                 Logger.getLogger(Service.class.getName()).log(Level.SEVERE, "Unable to parse file", ex);
+                halt(500, "I was unable to parse the file you sent me! Are you sure you are sending an Excel file?");
             }
             halt(200);
             return null;
