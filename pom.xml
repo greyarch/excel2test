@@ -8,17 +8,23 @@
     
     <repositories>
         <repository>
-            <id>nexus</id>
-            <url>http://repo.isf.org:8081/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>nexus-snapshots</id>
-            <url>http://repo.isf.org:8081/nexus/content/groups/public-snapshots</url>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
         </repository>
     </repositories>
+
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,12 +43,6 @@
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
             <version>2.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.oreilly.servlet</groupId>
-            <artifactId>com.springsource.com.oreilly.servlet</artifactId>
-            <version>0.0.0.BUILD-20021105</version>
-            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
