@@ -1,4 +1,4 @@
-package nl.ictu.isd.art.services.excel2test.model;
+package io.testx.excel2test.model;
 
 import java.io.IOException;
 import java.io.InputStream;

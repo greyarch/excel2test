@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>greyarch.art.services</groupId>
-    <artifactId>excel2test</artifactId>
-    <version>1.2.1</version>
+    <groupId>io.testx</groupId>
+    <artifactId>excel2testx</artifactId>
+    <version>1.2.2</version>
     <packaging>jar</packaging>
     
     <repositories>
@@ -132,7 +132,7 @@
                             <arguments>
                                 <argument>build</argument>
                                 <argument>-t</argument>
-                                <argument>greyarch/xls2test:${project.version}</argument>
+                                <argument>testx/xls2testx:${project.version}</argument>
                                 <argument>.</argument>
                             </arguments>
                         </configuration>
@@ -149,8 +149,8 @@
                             <arguments>
                                 <argument>tag</argument>
                                 <argument>-f</argument>
-                                <argument>docker1.rni.org:5000/xls2test:${project.version}</argument>
-                                <argument>docker1.rni.org:5000/xls2test:latest</argument>
+                                <argument>testx/xls2testx:${project.version}</argument>
+                                <argument>testx/xls2testx:latest</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -179,7 +179,7 @@
                                     <executable>docker</executable>
                                     <arguments>
                                         <argument>push</argument>
-                                        <argument>docker1.rni.org:5000/xls2test:${project.version}</argument>
+                                        <argument>testx/xls2testx:${project.version}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
