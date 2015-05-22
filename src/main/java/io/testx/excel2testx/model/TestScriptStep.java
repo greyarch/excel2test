@@ -51,7 +51,6 @@ public class TestScriptStep {
 
     @Override
     public String toString() {
-        System.out.println("arguments are: " + arguments);
         return "{" + "\"name\":\"" + name + "\", \"meta\":" + JSONValue.toJSONString(meta) + ", \"arguments\":" + JSONValue.toJSONString(arguments) + "}";
     }
 }
