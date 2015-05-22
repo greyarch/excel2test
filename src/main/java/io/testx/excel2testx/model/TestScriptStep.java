@@ -1,9 +1,9 @@
-package io.testx.excel2test.model;
+package io.testx.excel2testx.model;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.logging.Logger;
-import org.json.JSONObject;
+import org.json.simple.JSONValue;
 
 /**
  *
@@ -51,6 +51,7 @@ public class TestScriptStep {
 
     @Override
     public String toString() {
-        return "{" + "\"name\":\"" + name + "\", \"meta\":" + new JSONObject(meta) + ", \"arguments\":" + new JSONObject(arguments) + "}";
+        System.out.println("arguments are: " + arguments);
+        return "{" + "\"name\":\"" + name + "\", \"meta\":" + JSONValue.toJSONString(meta) + ", \"arguments\":" + JSONValue.toJSONString(arguments) + "}";
     }
 }

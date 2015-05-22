@@ -1,4 +1,4 @@
-package io.testx.excel2test;
+package io.testx.excel2testx;
 
 import com.google.common.io.Files;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import io.testx.excel2test.model.TestScriptFactory;
+import io.testx.excel2testx.model.TestScriptFactory;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;

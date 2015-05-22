@@ -1,4 +1,4 @@
-package io.testx.excel2test.model;
+package io.testx.excel2testx.model;
 
 import java.io.IOException;
 import java.io.InputStream;
