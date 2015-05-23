@@ -1,0 +1,4 @@
+xls:
+  image: testx/xls2testx:latest
+  ports:
+   - "80:4567"
